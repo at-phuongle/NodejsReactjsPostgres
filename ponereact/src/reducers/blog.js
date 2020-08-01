@@ -34,6 +34,7 @@ var myReducer = (state = initialState, action) => {
         comment: 0
       };
       state.push(newBlog);
+      console.log(state);
       localStorage.setItem('Blog', JSON.stringify(state));
       return [...state];
     case types.LIKE_BLOG:

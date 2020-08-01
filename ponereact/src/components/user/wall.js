@@ -5,7 +5,7 @@ import ava1 from '../../asets/images/ava1.png';
 import * as actions from '../../actions/index';
 
 function Wall(props) {
-  let arrStatus = props.blog;
+  let arrBlog= props.blog;
 
   let onHandleLike = (e) => {
     props.onLikeBlog(e.target.value);
@@ -31,7 +31,7 @@ function Wall(props) {
   return (
     <section className="section-wall">
       <ul className="wall-list">
-        {arrStatus.map((item, index) =>
+        {arrBlog.map((item, index) =>
           <li className="wall-item" key={index}>
             <div className="wall-top">
               <img src={ava1} alt="ava1" />

@@ -21,6 +21,7 @@ function Blog(props) {
     else {
       const newBlog = { idUser: userLogin.id, time: '19:29:39', userName: props.userLogin.name, content: valueInput }
       props.onCreateBlog(newBlog);
+      console.log(props.blog);
       setValueInput('');
     }
   }
